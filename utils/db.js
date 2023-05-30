@@ -10,7 +10,7 @@ export const connectToDb = async () => {
         return;
     }
     try{
-        await mongoose.connect('mongodb+srv://kheragaurang:lv7QpgTjlpbeZycx@prompty-db.vj5nlwl.mongodb.net/?retryWrites=true&w=majority', {
+        await mongoose.connect(process.env.MONGODB_URI, {
             dbName: 'Prompty-db',
             useNewUrlParser: true,
             useUnifiedTopology: true
