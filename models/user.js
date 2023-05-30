@@ -11,7 +11,7 @@ const userSchema = new Schema({
         unique: [true, 'An account with this email already exists.'],
         required: [true, 'An email is required to proceed.']
     },
-    'img': {
+    'image': {
         type: String,
     } 
 })
