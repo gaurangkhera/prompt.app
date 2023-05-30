@@ -3,7 +3,7 @@ import { connectToDb } from "@/utils/db";
 
 export const GET = async (request) => {
     try {
-        await connectToDB()
+        await connectToDb();
 
         const prompts = await Prompt.find({}).populate('creator')
 
